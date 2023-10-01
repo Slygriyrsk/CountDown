@@ -1,0 +1,66 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+
+body {
+  font-size: large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: url("./src/nasa.jpg") center center;
+  background-size: cover;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column; /* taki text center pr aa jye for flex box*/
+  /* justify-content: center; ye taki jo niche show kr rhe h wo center pr aa jye*/
+  align-items: center;
+  color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* to dull the nackground image*/
+}
+
+.title {
+  margin-top: 10px;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.col {
+  margin-top: 20px; /*margin isliye taki sari boxes text se ddor rhe*/
+  display: flex;
+  width: 1000px;
+  /* border: 1px solid black; */
+  /*margin: 10px auto;*/ /*top bottom se 10 px aur left right se auto and we are using display as flex so we can write below justify content as center*/
+  justify-content: center;
+}
+
+.col div {
+  width: 250px;
+  text-align: center;
+}
+
+input {
+  height: 50px;
+  width: 50%;
+  background-color: rgba(92, 86, 86, 0.58);
+  border-color: transparent;
+  border-radius: 5px;
+  /*display: block;*/ /*taki text mera boxes ke niche aa ske*/
+  /*display block isliye use nhi kiya kyuki break statement use kr rhe h already html me*/
+  color: white;
+  text-align: center;
+  font-size: 24px; /*jo bhi boxes me type kre wo center pr rhe*/
+}
